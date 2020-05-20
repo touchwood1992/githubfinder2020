@@ -11,7 +11,8 @@ const App = () => {
   return (
     <Layout>
       <div>App: {process.env.GITHUB_CLIENT_ID}</div>
-      REACT {process.env.REACT_APP_CLIENT_ID}
+      <div>REACT {process.env.REACT_APP_CLIENT_ID}</div>
+      <div>New {process.env.REACT_APP_API_KEY}</div>
       {/* <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />
