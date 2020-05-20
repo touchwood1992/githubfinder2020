@@ -2,14 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./containers/App";
 import * as serviceWorker from "./serviceWorker";
-// import { BrowserRouter } from "react-router-dom";
-// import GithubState from "./contexts/github/GithubState";
+import { BrowserRouter } from "react-router-dom";
+import GithubState from "./contexts/github/GithubState";
 const appMain = ( // <React.StrictMode>
-  // <GithubState>
-  //   <BrowserRouter>
-  <App />
-  //   </BrowserRouter>
-  // </GithubState>
+  <GithubState>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </GithubState>
 );
 // </React.StrictMode>
 

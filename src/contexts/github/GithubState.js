@@ -153,6 +153,9 @@ const GithubState = (props) => {
 
   return (
     <>
+      {console.log("Environment", process.env.NODE_ENV)}
+      {console.log("GITHUB CLIENT ID", githubConfigObj.GITHUB_CLIENT_ID)}
+      {console.log("GITGUB SECRET", githubConfigObj.GITHUB_CLIENT_SECRET)}
       <GithubContext.Provider
         value={{
           users: state.users,
