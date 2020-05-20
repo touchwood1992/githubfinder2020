@@ -13,7 +13,7 @@ const App = () => {
       <div>App GITHUB_CLIENT_ID: {process.env.GITHUB_CLIENT_ID}</div>
       <div>App: {process.env.REACT_APP_API_KEY}</div>
       <div>REACT: {process.env.REACT_APP_CLIENT_ID}</div>
-      <div>New2 : {process.env.REACT_APP_CLIENT_ID}</div>
+      <div>New2 : {process.env.REACT_APP_SECRET}</div>
       {/* <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />
