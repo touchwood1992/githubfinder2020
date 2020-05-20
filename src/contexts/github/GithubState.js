@@ -152,27 +152,22 @@ const GithubState = (props) => {
   };
 
   return (
-    <>
-      {console.log("Environment", process.env.NODE_ENV)}
-
-      {console.log("GITGUB SECRET", githubConfigObj.GITHUB_CLIENT_SECRET)}
-      <GithubContext.Provider
-        value={{
-          users: state.users,
-          userDetail: state.userDetail,
-          userRepos: state.userRepos,
-          error: state.error,
-          loading: state.loading,
-          searchValue: state.searchValue,
-          searchUsers,
-          resetUsers,
-          getUserDetail,
-          getUserRepos,
-        }}
-      >
-        {props.children}
-      </GithubContext.Provider>
-    </>
+    <GithubContext.Provider
+      value={{
+        users: state.users,
+        userDetail: state.userDetail,
+        userRepos: state.userRepos,
+        error: state.error,
+        loading: state.loading,
+        searchValue: state.searchValue,
+        searchUsers,
+        resetUsers,
+        getUserDetail,
+        getUserRepos,
+      }}
+    >
+      {props.children}
+    </GithubContext.Provider>
   );
 };
 export default GithubState;
