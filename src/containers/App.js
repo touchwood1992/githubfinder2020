@@ -10,7 +10,7 @@ import "./App.css";
 const App = () => {
   return (
     <Layout>
-      <div>App: {process.env.GITHUB_CLIENT_ID}</div>
+      <div>App GITHUB_CLIENT_ID: {process.env.GITHUB_CLIENT_ID}</div>
       <div>App: {process.env.REACT_APP_API_KEY}</div>
       <div>REACT: {process.env.REACT_APP_CLIENT_ID}</div>
       <div>New2 : {process.env.REACT_APP_CLIENT_ID}</div>
