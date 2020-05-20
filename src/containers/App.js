@@ -11,6 +11,7 @@ const App = () => {
   return (
     <Layout>
       <div>App: {process.env.GITHUB_CLIENT_ID}</div>
+      <div>App: {process.env.G_CLIENT_ID}</div>
       <div>REACT {process.env.REACT_APP_CLIENT_ID}</div>
       <div>New {process.env.REACT_APP_API_KEY}</div>
       {/* <Switch>
